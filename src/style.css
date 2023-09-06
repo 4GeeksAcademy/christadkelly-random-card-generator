@@ -1,1 +1,58 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: #00512c;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 125px;
+}
+
+.card {
+  background-color: white;
+  width: 375px;
+  height: 525px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.header {
+  position: relative;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.footer {
+  position: relative;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  transform: rotate(180deg);
+}
+
+.number {
+  position: relative;
+  margin-top: 50px;
+  height: 325px;
+}
+
+.heart {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f0/SuitHearts.svg);
+}
+
+.diamond {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/db/SuitDiamonds.svg);
+}
+
+.club {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/SuitClubs.svg);
+}
+
+.spade {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/SuitSpades.svg);
+}
