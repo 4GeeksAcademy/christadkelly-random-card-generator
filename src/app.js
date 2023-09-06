@@ -26,3 +26,5 @@ function generateNewCard() {
 
 const btn = document.getElementById("button");
 btn.addEventListener("click", generateNewCard);
+
+setInterval(generateNewCard, 10000);
