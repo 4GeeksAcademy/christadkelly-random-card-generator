@@ -27,4 +27,25 @@ function generateNewCard() {
 const btn = document.getElementById("button");
 btn.addEventListener("click", generateNewCard);
 
-setInterval(generateNewCard, 10000);
+const startBtn = document.getElementById("autoStart");
+const stopBtn = document.getElementById("autoStop");
+
+var timer;
+let isgoing = false;
+
+function start() {
+  if (isgoing == false) {
+    timer = setInterval(generateNewCard, 10000);
+    isgoing = true;
+  }
+}
+
+function stop() {
+  if (isgoing == true) {
+    clearInterval(timer);
+    isgoing = false;
+  }
+}
+
+startBtn.addEventListener("click", start);
+stopBtn.addEventListener("click", stop);
