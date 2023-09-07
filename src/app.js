@@ -2,9 +2,6 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = generateNewCard();
 
 function generateNewCard() {
@@ -12,7 +9,7 @@ function generateNewCard() {
   const cardNumber = document.getElementById("cardNumber");
   cardNumber.innerHTML = cardNum[Math.floor(Math.random() * 12)];
 
-  const suit = ["heart", "spade", "club", "diamond"];
+  const suit = ["heart", "diamond", "spade", "club"];
   const newSuit = suit[Math.floor(Math.random() * 4)];
 
   const top = document.querySelector(".header");
@@ -22,6 +19,12 @@ function generateNewCard() {
   const bottom = document.querySelector(".footer");
   bottom.className = "";
   bottom.classList.add("footer", newSuit);
+
+  if (newSuit == "heart" || newSuit == "diamond") {
+    cardNumber.style.color = "red";
+  } else {
+    cardNumber.style.color = "black";
+  }
 }
 
 const btn = document.getElementById("button");
