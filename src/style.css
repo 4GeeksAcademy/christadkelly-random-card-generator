@@ -8,6 +8,12 @@ h1 {
   font-size: 125px;
 }
 
+.controls {
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+}
+
 .card {
   background-color: white;
   width: 375px;
@@ -18,27 +24,27 @@ h1 {
 
 .header {
   position: relative;
-  height: 150px;
+  height: 25%;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 25px;
-  margin-left: 25px;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
 .footer {
   position: relative;
-  height: 150px;
+  height: 25%;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-bottom: 25px;
-  margin-right: 25px;
+  margin-bottom: 5%;
+  margin-right: 5%;
   transform: rotate(180deg);
 }
 
 .number {
   position: relative;
-  margin-top: 50px;
-  height: 325px;
+  margin-top: 10%;
+  height: 50%;
 }
 
 .heart {
