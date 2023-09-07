@@ -31,7 +31,6 @@ const btn = document.getElementById("button");
 btn.addEventListener("click", generateNewCard);
 
 // Add timer and buttons
-
 const startBtn = document.getElementById("autoStart");
 const stopBtn = document.getElementById("autoStop");
 
@@ -56,7 +55,6 @@ startBtn.addEventListener("click", start);
 stopBtn.addEventListener("click", stop);
 
 //Adjust card height and width
-
 const cardHeight = document.getElementById("cardHeight");
 const cardWidth = document.getElementById("cardWidth");
 const card = document.getElementById("card");
@@ -92,4 +90,15 @@ resetBtn.addEventListener("click", resetCard);
 function resetCard() {
   card.style.height = "525px";
   card.style.width = "375px";
+  card.style.backgroundColor = "white";
+  bgColorSelect.value = "default";
+}
+
+//Change card background
+const bgColorSelect = document.getElementById("bgColorSelect");
+bgColorSelect.addEventListener("change", changeBackground);
+
+function changeBackground() {
+  let newBackground = bgColorSelect.value;
+  card.style.backgroundColor = newBackground;
 }
